@@ -3,11 +3,18 @@ import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDumbbell, faBars, faWindowClose } from "@fortawesome/free-solid-svg-icons"
 
+const menu = [{title : 'Accueil', link : 'home'}, 
+            {title : 'A propos', link : 'about'},
+            {title : 'Programmes', link :'programs'},
+            {title : 'Avis', link : 'opinions'},
+            {title : 'Contact' , link : 'contact'}]
+
 export default function NavBar() {
     const [hidden, setHidden] = useState(true)
+    
 
     return(
-        <div className="flex justify-between mx-5 mt-3">
+        <div className="flex justify-between ">
             <div>
                 <FontAwesomeIcon 
                     icon={faDumbbell} 
@@ -21,11 +28,12 @@ export default function NavBar() {
             
             <div className="hidden md:hidden lg:block">
                 <ul className="flex text-gray-500 cursor-pointer">
-                    <li className="m-4 hover:text-purple-500">Accueil</li>
-                    <li className="m-4 hover:text-purple-500">Programme</li>
-                    <li className="m-4 hover:text-purple-500">Blog</li>
-                    <li className="m-4 mx-3 hover:text-purple-500">Contact</li>
-                    <li className="mx-3 px-9 text-purple-500 border-2 border-purple-500 rounded-3xl p-4 hover:bg-purple-500 hover:text-white">Login</li>
+                    {menu.map(item =>(
+                        <a href={`#${item.link}`}>
+                        <li className="m-4 hover:text-purple-500 hover:underline">{item.title}</li>
+                        </a>
+                    ))}
+                    <li className="mx-3 px-9 font-bold text-purple-500 border-2 border-purple-500 rounded-3xl p-4 hover:bg-purple-500 hover:text-white">Login</li>
                 </ul>
             </div>
             <div className="block md:block lg:hidden">
@@ -33,17 +41,25 @@ export default function NavBar() {
                     hidden ? 
                         <FontAwesomeIcon 
                             icon={faBars}
-                            className = "cursor-pointer pt-4"
+                            className = "cursor-pointer pt-4 text-purple-500"
                             size="3x"
                             onClick ={(()=>{setHidden(!hidden)})}
                         />
                         :
-                        <FontAwesomeIcon
-                            icon={faWindowClose}
-                            className="pt-4 cursor-pointer"
-                            size='3x'
-                            onClick ={(()=>{setHidden(!hidden)})}
-                        />   
+                        <div className="mt-4 top-0 right-0 absolute bg-white p-8 rounded-b-lg h-screen">
+                            <ul className="flex flex-col text-gray-500 cursor-pointer">                            
+                                <FontAwesomeIcon
+                                    icon={faWindowClose}
+                                    className="pt-4 cursor-pointer text-purple-500 text-center"
+                                    size='3x'
+                                    onClick ={(()=>{setHidden(!hidden)})}
+                                /> 
+                                {menu.map(item =>(         
+                                    <li className="m-4 hover:text-purple-500">{item.title}</li>          
+                                ))}
+                                <li className="mx-3 px-9 font-bold text-purple-500 border-2 border-purple-500 rounded-3xl p-4 hover:bg-purple-500 hover:text-white">Login</li>
+                            </ul>  
+                        </div>
                 }
             </div>
         </div>

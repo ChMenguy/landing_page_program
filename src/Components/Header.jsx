@@ -1,0 +1,38 @@
+import ImgHeader from '../assets/images/monteecorde.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMedal, faArrowCircleRight, faCircle } from '@fortawesome/free-solid-svg-icons'
+
+function Header(){
+    return(
+        <div id= "home" className="flex mt-6 flex-wrap mr-4 mb-4">
+            <div className=" w-full lg:w-1/2 mt-16 pl-16 mb-10">
+               <h1 className="font-bold text-5xl ">Restes en forme et </h1> 
+               <h1 className="font-bold text-5xl mt-4">deviens meilleur</h1>
+               <h1 className="font-bold text-5xl mt-4 mb-10">
+                    chaque jour 
+                    <FontAwesomeIcon 
+                        icon={faMedal} 
+                        className="text-purple-500"
+                    />
+                </h1>
+               
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eveniet dolores saepe nam odit voluptates sint reiciendis blanditiis, quos laboriosam sunt esse perspiciatis deleniti necessitatibus temporibus quisquam cum architecto cumque.</p>
+               <div className="mt-5">
+                   <button className=" bg-purple-500 p-5 text-lg text-white font-bold rounded-3xl">
+                        Nos Programmes 
+                        <FontAwesomeIcon 
+                            icon={faArrowCircleRight}
+                            className="ml-3 pt-1"
+                        />
+                   </button>
+               </div>
+            </div>
+            <div className=" w-full lg:w-1/2 mt-5 bg-purple-500 rounded-full border-10 border-purple-300 ">
+                <img src={ImgHeader} alt="corde" width="300px" className="mx-auto"/>
+            </div>
+        </div>
+       
+    )
+}
+
+export default Header
