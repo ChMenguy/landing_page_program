@@ -18,9 +18,8 @@ export default function NavBar() {
             <div>
                 <FontAwesomeIcon 
                     icon={faDumbbell} 
-                    color="white"
                     size= "4x"
-                    className="bg-purple-500 p-3 rounded-lg"
+                    className="bg-primary p-3 rounded-lg text-secondary"
                     transform ={{ rotate: 45 }}
                 />
             </div> 
@@ -28,10 +27,10 @@ export default function NavBar() {
                 <ul className="flex text-gray-500 cursor-pointer">
                     {menu.map(item =>(
                         <a href={item.link}>
-                        <li className="m-4 hover:text-purple-500 hover:underline">{item.title}</li>
+                        <li className="m-4 hover:text-primary hover:underline">{item.title}</li>
                         </a>
                     ))}
-                    <li className="mx-3 px-9 font-bold text-purple-500 border-2 border-purple-500 rounded-3xl p-4 hover:bg-purple-500 hover:text-white">Login</li>
+                    <li className="mx-3 px-9 font-bold text-primary border-2 border-primary rounded-3xl p-4 hover:bg-primary hover:text-secondary">Login</li>
                 </ul>
             </div>
             <div className="block md:block lg:hidden">
@@ -39,23 +38,23 @@ export default function NavBar() {
                     hidden ? 
                         <FontAwesomeIcon 
                             icon={faBars}
-                            className = "cursor-pointer pt-4 text-purple-500"
+                            className = "cursor-pointer pt-4 text-primary"
                             size="3x"
                             onClick ={(()=>{setHidden(!hidden)})}
                         />
                         :
-                        <div className="mt-4 top-0 right-0 absolute bg-white p-8 rounded-b-lg h-screen">
+                        <div className="mt-4 top-0 right-0 absolute bg-secondary p-8 rounded-b-lg h-screen">
                             <ul className="flex flex-col text-gray-500 cursor-pointer">                            
                                 <FontAwesomeIcon
                                     icon={faWindowClose}
-                                    className="pt-4 cursor-pointer text-purple-500 text-center"
+                                    className="pt-4 cursor-pointer text-primary text-center"
                                     size='3x'
                                     onClick ={(()=>{setHidden(!hidden)})}
                                 /> 
                                 {menu.map(item =>(         
-                                    <li className="m-4 hover:text-purple-500">{item.title}</li>          
+                                    <li className="m-4 hover:text-primary">{item.title}</li>          
                                 ))}
-                                <li className="mx-3 px-9 font-bold text-purple-500 border-2 border-purple-500 rounded-3xl p-4 hover:bg-purple-500 hover:text-white">Login</li>
+                                <li className="mx-3 px-9 font-bold text-primary border-2 border-primary rounded-3xl p-4 hover:bg-primary hover:text-secondary">Login</li>
                             </ul>  
                         </div>
                 }

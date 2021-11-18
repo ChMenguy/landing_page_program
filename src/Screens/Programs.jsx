@@ -13,12 +13,12 @@ const programs = [  {icon : faHeartbeat, title : 'HIIT', content : 'Lorem ipsum 
 function Programs(){
     return(
         <div id="programs">
-            <h1 className=" text-center mx-auto font-extrabold text-4xl lg:text-5xl mb-8">Nos Programmes <FontAwesomeIcon icon = {faTrophy} className="text-purple-500" /></h1>
+            <h1 className=" text-center mx-auto font-extrabold text-4xl lg:text-5xl mb-8">Challenge toi! <FontAwesomeIcon icon = {faTrophy} className="text-primary" /></h1>
             <div className="flex flex-wrap text-center mt-10">
                 {programs.map(item=>(
                     <div className="w-1/2 flex-wrap lg:w-1/3 flex mb-14 ">
                         <div className="w-1/4 pt-3 "> 
-                            <div className="bg-purple-500 rounded-full w-12 h-12 mx-auto pt-2 text-white" >
+                            <div className="bg-primary rounded-full w-12 h-12 mx-auto pt-2 text-secondary" >
                                 <FontAwesomeIcon icon={item.icon} size="2x" />
                             </div>         
                         </div>
@@ -29,8 +29,8 @@ function Programs(){
                     </div>
                 ))}                   
             </div>
-            <div className="flex mt-5 justify-center">
-                <button className=" flex bg-purple-500 p-5 text-lg text-white font-bold rounded-3xl justify-end">
+            <div className="flex justify-center mb-10">
+                <button className=" flex bg-primary p-5 text-lg text-secondary font-bold rounded-3xl justify-end">
                         Commencez maintenant 
                         <FontAwesomeIcon 
                             icon={faArrowCircleRight}

@@ -15,13 +15,13 @@ function About(){
             <div className="flex m-10 pt-20" id="about">
                 <div className="flex  flex-wrap-reverse">
                     <div className="w-full lg:w-1/2">
-                        <img src={ImgAbout1} alt="about" width="350px" className="mx-auto bg-purple-300 rounded-full "/>
+                        <img src={ImgAbout1} alt="about" width="350px" className="mx-auto bg-optional1 rounded-full "/>
                     </div>
                     <div className="w-full lg:w-1/2 pt-10 mb-8">
                         <h1 className="text-center mx-auto font-extrabold text-4xl lg:text-5xl mb-8">Qui sommes nous?</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro vel omnis consectetur ipsum inventore facilis, possimus magnam nesciunt, illo exercitationem ea neque quos accusamus sint hic voluptatum! Explicabo, quis molestias.</p>
                         <div className="flex mt-5 justify-end">
-                            <button className=" flex bg-purple-500 p-5 text-lg text-white font-bold rounded-3xl justify-end">
+                            <button className=" flex bg-primary p-5 text-lg text-secondary font-bold rounded-3xl justify-end">
                                 Let's go 
                                 <FontAwesomeIcon 
                                     icon={faArrowCircleRight}
@@ -37,9 +37,9 @@ function About(){
                     <h1 className="text-center mx-auto font-extrabold text-4xl lg:text-5xl mb-8">Beaucoup d'avantages <br/>rien que pour vous</h1>
                     
                         {advantage.map(item =>(
-                        <div className="flex opacity-30 hover:opacity-100 cursor-pointer mt-5 bg-gradient-to-b from-gray-200 to-white p-2 border-0 rounded-md">
+                        <div className="flex opacity-30 hover:opacity-100 cursor-pointer mt-5 bg-gradient-to-b from-gray-200 to-secondary p-2 border-0 rounded-md">
                             <div className="w-2/12">
-                                <div className=" bg-purple-500 pt-1 rounded-full text-center text-white font-bold text-xl h-10 w-10 mx-auto">
+                                <div className=" bg-primary pt-1 rounded-full text-center text-secondary font-bold text-xl h-10 w-10 mx-auto">
                                     {item.id}
                                 </div>                            
                             </div>

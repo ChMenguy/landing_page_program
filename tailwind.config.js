@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -11,6 +13,12 @@ module.exports = {
       '6': '6px',
       '8': '8px',
       '10':'20px'
+    },
+    colors: {
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      optional1 : 'var(--color-optional1)',
+      gray: colors.coolGray
     },
     extend: {},
   },
