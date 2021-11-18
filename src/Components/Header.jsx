@@ -1,6 +1,7 @@
 import ImgHeader from '../assets/images/monteecorde.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedal, faArrowCircleRight, faCircle } from '@fortawesome/free-solid-svg-icons'
+import { faMedal, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 function Header(){
     return(
@@ -27,8 +28,11 @@ function Header(){
                    </button>
                </div>
             </div>
-            <div className=" w-full lg:w-1/2 mt-5 bg-purple-500 rounded-full border-10 border-purple-300 ">
-                <img src={ImgHeader} alt="corde" width="300px" className="mx-auto"/>
+            <div className=" w-full lg:w-1/2 mb-5 pt-6">
+                <div className=" mt-5 bg-purple-500 rounded-full border-10 border-purple-300 h-96 w-96 mx-auto">
+                    <img src={ImgHeader} alt="corde" width="300px"/>
+                </div>
+                
             </div>
         </div>
        

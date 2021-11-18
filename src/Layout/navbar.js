@@ -3,11 +3,11 @@ import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDumbbell, faBars, faWindowClose } from "@fortawesome/free-solid-svg-icons"
 
-const menu = [{title : 'Accueil', link : 'home'}, 
-            {title : 'A propos', link : 'about'},
-            {title : 'Programmes', link :'programs'},
-            {title : 'Avis', link : 'opinions'},
-            {title : 'Contact' , link : 'contact'}]
+const menu = [{title : 'Accueil', link : '#home'}, 
+            {title : 'A propos', link : '#about'},
+            {title : 'Programmes', link :'#programs'},
+            {title : 'Avis', link : '#opinions'},
+            {title : 'Contact' , link : '#contact'}]
 
 export default function NavBar() {
     const [hidden, setHidden] = useState(true)
@@ -23,13 +23,11 @@ export default function NavBar() {
                     className="bg-purple-500 p-3 rounded-lg"
                     transform ={{ rotate: 45 }}
                 />
-                <h1></h1>
             </div> 
-            
             <div className="hidden md:hidden lg:block">
                 <ul className="flex text-gray-500 cursor-pointer">
                     {menu.map(item =>(
-                        <a href={`#${item.link}`}>
+                        <a href={item.link}>
                         <li className="m-4 hover:text-purple-500 hover:underline">{item.title}</li>
                         </a>
                     ))}
