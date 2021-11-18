@@ -5,6 +5,7 @@ import Header from './Screens/Header.jsx';
 import Programs from './Screens/Programs.jsx';
 import About from './Screens/About';
 import Opinions from './Screens/Opinions';
+import Footer from './Screens/Footer';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
     <Header /> 
     <About />
     <Programs />  
-    <Opinions />  
+    <Opinions />
+    <Footer />  
   </Layout>
   );
 }
