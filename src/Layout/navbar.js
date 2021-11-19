@@ -2,6 +2,7 @@ import { useState } from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDumbbell, faBars, faWindowClose } from "@fortawesome/free-solid-svg-icons"
+import Logo from "../components/Logo"
 
 const menu = [{title : 'Accueil', link : '#home'}, 
             {title : 'A propos', link : '#about'},
@@ -15,14 +16,7 @@ export default function NavBar() {
 
     return(
         <div className="flex justify-between ">
-            <div>
-                <FontAwesomeIcon 
-                    icon={faDumbbell} 
-                    size= "4x"
-                    className="bg-primary p-3 rounded-lg text-secondary"
-                    transform ={{ rotate: 45 }}
-                />
-            </div> 
+                <Logo />
             <div className="hidden md:hidden lg:block">
                 <ul className="flex text-gray-500 cursor-pointer">
                     {menu.map(item =>(

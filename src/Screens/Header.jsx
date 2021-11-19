@@ -1,7 +1,7 @@
 import ImgHeader from '../assets/images/monteecorde.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMedal, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { faMedal } from '@fortawesome/free-solid-svg-icons'
 import Button from '../components/Button'
 import Title from '../components/Title'
 
@@ -13,13 +13,14 @@ function Header(){
                     content = {`Reste en forme et deviens meilleur chaque jour `}
                     icon = {<FontAwesomeIcon icon={faMedal} className="text-primary"/>}
                 />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eveniet dolores saepe nam odit voluptates sint reiciendis blanditiis, quos laboriosam sunt esse perspiciatis deleniti necessitatibus temporibus quisquam cum architecto cumque.</p>
+                <p>Içi vous trouverez des programmations pour progresser que ce soit en Haltérophilie, en Gymnastique ou encore en endurance.</p>
                 <Button 
-                    content="Nos programmes"
+                    content="Deviens une machine"
+                    justify ="flex justify-center"
                 />
             </div>
             <div className=" w-full lg:w-1/2 mb-5 pt-6 ">
-                <div className=" mt-5 bg-primary rounded-full border-10 border-optional1 h-96 w-96 mx-auto">
+                <div className=" mt-5 bg-primary rounded-full border-10 border-optional1 h-72 w-72 lg:h-96 lg:w-96 mx-auto">
                     <img src={ImgHeader} alt="corde" width="300px"/>
                 </div>
                 
