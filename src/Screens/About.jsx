@@ -4,8 +4,8 @@ import ImgAbout2 from '../assets/images/boxjump.png'
 import Button from '../components/Button'
 import Title from '../components/Title'
 
-const advantage = [ {id : 1 , content : 'Vous pouvez programmez votre entrainement sur votre calendrier personnel, définir un rappel afin que vous puissiez planifier au mieux votre activité' },
-                    {id : 2 , content : 'Pour chaque exercice, vous aurez une vidéos explicative qui vous présentera l\'objectif et les sensations recherchés par l\'exercice ainsi qu\'une démonstration technique' },
+const advantage = [ {id : 1 , content : 'Vous pouvez programmer votre entrainement sur votre calendrier personnel, définir un rappel afin que vous puissiez planifier au mieux votre activité' },
+                    {id : 2 , content : 'Pour chaque exercice, vous aurez une vidéo explicative qui vous présentera l\'objectif et les sensations recherchés par l\'exercice ainsi qu\'une démonstration pratique' },
                     {id : 3 , content : 'Vous avez accès à la communauté de Cross-programs vous pourrez poser vos questions à nos coachs mais aussi échanger avec les autres membres de la communauté' }
                 ]
 
@@ -21,7 +21,7 @@ function About(){
                         <Title 
                             content = "Qui sommes nous?"
                         /> 
-                        <p>Cross-Programs est une plateforme qui propose des programmations pour tous les crossfiteurs qui veulent progresser quelque soit leurs niveaux. Que ce soit l'haltérophilie, la gymnastique ou encore le cardio, nos équipes mettent toutes leurs énergie pour que vous permettre d'atteindre vos objectifs</p>
+                        <p>Cross-Programs est une plateforme qui propose des programmations pour tous les crossfiteurs qui veulent progresser quelque soit leurs niveaux. Que ce soit l'haltérophilie, la gymnastique ou encore le cardio, nos équipes mettent toute leur énergie pour vous permettre d'atteindre vos objectifs</p>
                         <Button 
                             content="Let's go !"
                             justify = "flex justify-end"
