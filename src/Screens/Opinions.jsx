@@ -5,9 +5,9 @@ import ImageOpinions from '../assets/images/corde.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGrinHearts} from "@fortawesome/free-solid-svg-icons"
 
-const opinions = [{name : 'John Doe', comment : `"Super programmation qui m'a permis d'exploser tous mes records"`},
-                    {name : 'Sarah Connor', comment : `"Grâce à la programmation HIIT je suis plus en forme et plus endurant"`},
-                    {name : 'Paul Dupont', comment : `"Premier muscle-up aujourd'hui après un mois de travail de gymnastique. Je suis au ange"`}
+const opinions = [{name : 'Marc', comment : `"Super programmation qui m'a permis d'exploser tous mes records"`},
+                    {name : 'Sarah', comment : `"Grâce à la programmation HIIT je suis plus en forme et plus endurant"`},
+                    {name : 'Kevin', comment : `"Premier muscle-up aujourd'hui après un mois de travail de gymnastique. Je suis au ange"`}
                 ]
 
 function Opinions(){

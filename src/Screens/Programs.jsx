@@ -14,7 +14,7 @@ const programs = [  {icon : faHeartbeat, title : 'HIIT', content : 'Lorem ipsum 
 
 function Programs(){
     return(
-        <div id="programs">
+        <div id="programs mt-10">
             <Title 
                 content='Challenge-toi !' 
                 icon = {<FontAwesomeIcon icon = {faTrophy} className="text-primary" />}
