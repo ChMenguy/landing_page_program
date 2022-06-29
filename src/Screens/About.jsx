@@ -3,6 +3,7 @@ import ImgAbout1 from '../assets/images/overhead.png'
 import ImgAbout2 from '../assets/images/boxjump.png'
 import Button from '../components/Button'
 import Title from '../components/Title'
+import SignaturePad from 'react-signature-pad'
 
 const advantage = [ {id : 1 , content : 'Vous pouvez programmer votre entrainement sur votre calendrier personnel, définir un rappel afin que vous puissiez planifier au mieux votre activité' },
                     {id : 2 , content : 'Pour chaque exercice, vous aurez une vidéo explicative qui vous présentera l\'objectif et les sensations recherchés par l\'exercice ainsi qu\'une démonstration pratique' },
@@ -12,6 +13,7 @@ const advantage = [ {id : 1 , content : 'Vous pouvez programmer votre entraineme
 function About(){
     return(
         <div>
+            <SignaturePad />
             <div className="flex m-10 pt-20" id="about">
                 <div className="flex  flex-wrap-reverse">
                     <div className="w-full lg:w-1/2">
